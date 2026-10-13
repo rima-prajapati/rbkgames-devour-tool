@@ -75,3 +75,38 @@
 .wp-site-blocks .rbk-acf > * { margin-inline: auto; }
 .rbk-acf .rbk-headrow { display: flex; justify-content: space-between; }
 .rbk-acf .wp-block-buttons { justify-content: center; display: flex; }
+
+/* REFERENCE MATCH: top section (rbkgames.com) */
+.rbk-home-top .rbk-headrow { align-items: flex-start; margin: 0 auto; }
+.rbk-home-top .rbk-h1 { font-size: 25px; font-weight: 500; line-height: 1; margin: 10px 0; }
+.rbk-home-top .rbk-headrow .rbk-sec-title { font-size: 20px; font-weight: 500; line-height: 28px; margin: 5px 0 0; }
+.rbk-ec ul.wp-block-post-template { gap: 5px 10px; }
+.rbk-ec .rbk-card { border-radius: 15px; }
+.rbk-ec .rbk-card::after { background: linear-gradient(transparent, rgba(0, 0, 0, .8)); }
+.rbk-ec li:first-child .wp-block-post-featured-image { aspect-ratio: auto; height: 384px; }
+.rbk-ec li:not(:first-child) .wp-block-post-featured-image { aspect-ratio: auto; height: 15vw; min-height: 130px; }
+.rbk-ec .rbk-card__body { padding: 0; margin: 20px; left: 0; right: 0; }
+.rbk-ec .wp-block-post-title { font-size: 20px; font-weight: 700; line-height: normal; padding: 0 7px; text-shadow: 2px 2px 2px rgba(0, 0, 0, .25); max-height: 85px; overflow: hidden; }
+.rbk-ec li:first-child .wp-block-post-title { font-size: 30px; font-weight: 700; padding: 7px; max-height: 260px; }
+.rbk-ec .wp-block-post-excerpt { font-size: 18px; line-height: 1; padding: 7px; margin: 0; }
+.rbk-ec li:first-child .wp-block-post-excerpt p { margin: 0; font-size: 18px; line-height: 1; }
+@media (max-width: 768px) {
+	.rbk-home-top .rbk-headrow { flex-direction: column; align-items: stretch; margin: 10px auto 0; }
+	.rbk-home-top .rbk-h1 { text-align: center; font-size: 22px; }
+	.rbk-home-top .rbk-headrow .rbk-sec-title { text-align: right; font-size: 15px; line-height: 20px; }
+	.rbk-ec ul.wp-block-post-template { grid-template-columns: 1fr; gap: 10px; }
+	.rbk-ec li:first-child .wp-block-post-featured-image { height: 250px; aspect-ratio: auto !important; }
+	.rbk-ec li:first-child .wp-block-post-title { font-size: 22px; }
+	.rbk-ec li:first-child .wp-block-post-excerpt { display: none; }
+	.rbk-ec li:not(:first-child) .rbk-card { display: flex; height: 83px; background: #2a2f35; }
+	.rbk-ec li:not(:first-child) .rbk-card::after { display: none; }
+	.rbk-ec li:not(:first-child) .wp-block-post-featured-image { flex: 0 0 160px; width: 160px; height: 83px !important; min-height: 0; aspect-ratio: auto !important; }
+	.rbk-ec li:not(:first-child) .rbk-card__body { position: static; margin: 0; padding: 10px 6px 0 11px; flex: 1; overflow: hidden; }
+	.rbk-ec li:not(:first-child) .wp-block-post-title { font-size: 14px; line-height: 1.2; padding: 0; max-height: none; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; text-shadow: none; }
+}
+@media (max-width: 480px) {
+	.rbk-home-top .rbk-h1 { font-size: 18px; line-height: 30px; }
+}
+
+.rbk-home-top { padding-top: 20px; }
+.rbk-home-top .rbk-headrow .rbk-sec-title { font-weight: 600; }
