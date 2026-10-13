@@ -1,0 +1,41 @@
+# .gitignore for a WordPress website, made by DEVOUR. Edit freely.
+# Tracked: WordPress core, plugins, themes and mu-plugins (so updates and installs are history too).
+# Not tracked: secrets, the owner's uploads, caches, logs, backups and other generated files.
+
+# Secrets and per-server settings
+/wp-config.php
+/.htaccess
+/.user.ini
+.env
+.env.*
+*.pem
+*.key
+.htpasswd
+
+# The owner's uploads and generated data
+/wp-content/uploads/
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/upgrade-temp-backup/
+/wp-content/backup/
+/wp-content/backups/
+/wp-content/backup-db/
+/wp-content/updraft/
+/wp-content/ai1wm-backups/
+/wp-content/wflogs/
+/wp-content/debug.log
+/wp-content/advanced-cache.php
+/wp-content/object-cache.php
+/wp-content/wp-cache-config.php
+
+# Logs, dumps, dependencies and editor/OS files
+*.log
+error_log
+*.sql
+*.sql.gz
+node_modules/
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

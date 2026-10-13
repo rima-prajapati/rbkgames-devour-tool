@@ -1,0 +1,22 @@
+{
+    "apiVersion": 3,
+    "name": "acf/rbk-featured",
+    "title": "RBK Editor's choice",
+    "description": "H1 + sticky posts grid (Выбор редакции).",
+    "category": "design",
+    "icon": "star-filled",
+    "keywords": [
+        "home",
+        "featured",
+        "hero"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": false,
+        "multiple": true
+    },
+    "editorScript": "file:./editor.js"
+}

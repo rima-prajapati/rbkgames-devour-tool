@@ -1,0 +1,23 @@
+{
+    "apiVersion": 3,
+    "name": "acf/rbk-post-grid",
+    "title": "RBK Post grid",
+    "description": "Game posters or article cards by category with optional button.",
+    "category": "design",
+    "icon": "grid-view",
+    "keywords": [
+        "games",
+        "articles",
+        "news",
+        "reviews"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "align": false,
+        "multiple": true
+    },
+    "editorScript": "file:./editor.js"
+}
